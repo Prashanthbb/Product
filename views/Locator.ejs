@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div style="margin-left:40%">
+<br>
+  <h1>Adress</h1>
+<form method="post" action="/Adress_create" >
+  <br>
+  <h3>Adress_Details</h3>
+
+  <p1>email: <input type="text" name="email" value="<%- result["email"] %>"></p1>
+  <br></br>
+  <p2>housenumber: <input type="number" name="housenumber" value="<%- result["housenumber"] %>"></p2>
+  <br>
+  <p3>building_name: <input type="text" name="building_name" value="<%- result["building_name"] %>"></p3>
+  <br>
+  <p4>landmark: <input type="text" name="landmark" value="<%- result["landmark"] %>"></p4>
+  <br>
+  <p5>area: <input type="text" name="area" value="<%- result["area"] %>"></p5>
+  <br>
+  <p6>city: <input type="text" name="city" value="<%- result["city"] %>"></p6>
+  <br>
+  <p7>state: <input type="text" name="state" value="<%- result["state"] %>"></p7>
+  <br>
+
+
+<br></br>
+<input type="submit" value="submit">
+<br></br>
+<a href="/read_adresses?email=<%- result["email"] %>"><button type="button" >All_Adresses</button></a>
+
+
+</form>
+</div>
+</body>
+</html>

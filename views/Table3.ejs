@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table,td,tr,th {
+  border: 1px solid black;
+  border-collapse:collapse;
+  padding: 25px;
+}
+</style>
+</head>
+<body>
+
+<h2>get_all_adresses</h2>
+<!-- <p>Use the CSS border property to add a border to the table.</p> -->
+<table style="width:100%">
+<tr>
+    <th>email</th>
+    <th>housenumber</th>
+    <th>building_name</th>
+    <th>landmark</th>
+    <th>city</th>
+    <th>area</th>
+    <th>state</th>
+    <th>action</th>
+</tr>
+  <% for(var i = 0; i <= results.length;i++){
+    if(results[i]){ %>
+  <tr>
+        <td>   <%- results[i].email %>          </td>
+        <td>   <%- results[i].housenumber %>          </td>
+        <td>   <%- results[i].building_name %>          </td>
+        <td>   <%- results[i].landmark %>          </td>
+        <td>   <%- results[i].city %>          </td>
+        <td>   <%- results[i].area %>          </td>
+        <td>   <%- results[i].state %>     </td>
+        <td><a href="/delete?id=<%- results[i]._id %>&email=<%- results[i].email %>"><button type="button" >delete</button></a></td>
+
+
+
+  </tr>
+<% }} %>
+
+</table>
+
+</body>
+</html>

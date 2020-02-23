@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div style="margin-left:40%">
+<br>
+  <h1>Dash Board</h1>
+<!-- <form method="post" action="/update"> -->
+  <br>
+  <h3>Your Profile</h3>
+  <br>
+  <p1>firstname: <%- result["firstname"] %></p1>
+  <br>
+  <p2>secondname: <%- result["secondname"] %></p2>
+  <br>
+  <p3>email: <%- result["email"] %></p3>
+  <br>
+  <p4>password: <%- result["password"] %></p4>
+  <br>
+  <p5>gender: <%- result["gender"] %></p5>
+  <br>
+  <p6>age: <%- result["age"] %></p6>
+  <br>
+
+
+<br></br>
+
+<a href="/edit-profile?email=<%- result["email"] %>"><button type="button" >Edit</button></a>
+<a href="login"><button type="button" >Login with another account</button></a>
+<br></br>
+<a href="/Status_create?email=<%- result["email"] %>"><button type="button" >Create_Post</button></a>
+<br></br>
+<a href="/read_posts?email=<%- result["email"] %>"><button type="button" >Old_Posts</button></a>
+<br></br>
+<a href="/Adress_create?email=<%- result["email"] %>"><button type="button" >Add_Adress</button></a>
+<br></br>
+<a href="/Item_create?email=<%- result["email"] %>"><button type="button" >Add_Item</button></a>
+<br></br>
+
+
+</form>
+</div>
+</body>
+</html>

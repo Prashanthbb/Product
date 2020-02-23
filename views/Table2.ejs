@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table,td,tr,th {
+  border: 1px solid black;
+  border-collapse:collapse;
+  padding: 25px;
+}
+</style>
+</head>
+<body>
+<h2>get_all_posts</h2>
+
+<table style="width:100%">
+<tr>
+    <th>email</th>
+
+    <th>write_post</th>
+
+    <th>date</th>
+</tr>
+  <% for(var i = 0; i <= results.length;i++) {
+    if(results[i]){ %>
+  <tr>
+        <td>   <%- results[i].email %>          </td>
+
+        <td>   <%- results[i].write_post %>     </td>
+  
+        <td>   <%- results[i].date || "NA" %>   </td>
+
+  </tr>
+<% }} %>
+
+</table>
+
+</body>
+</html>

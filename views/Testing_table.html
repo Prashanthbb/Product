@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table,td,tr,th {
+  border: 1px solid black;
+  border-collapse:collapse;
+  padding: 25px;
+}
+
+
+</style>
+</head>
+<body>
+
+<h2>get_all_posts</h2>
+<!-- <p>Use the CSS border property to add a border to the table.</p> -->
+
+<!-- <table style="width:100%"> -->
+<tr>
+    <th>email</th>
+  </br>
+    <th>write_post</th>
+  </br>
+    <th>date</th>
+</tr>
+  <% for(var i = 0; i <= results.length;i++) {
+    if(results[i]){ %>
+  <tr>
+        <td>   <%- results[i].email %>          </td>
+      </br>
+
+        <td>   <%- results[i].write_post %>     </td>
+      </br>
+
+        <td>   <%- results[i].date || "NA" %>   </td>
+
+  </tr>
+<% }} %>
+
+</table>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table,td,tr,th {
+  border: 1px solid black;
+  border-collapse:collapse;
+  padding: 25px;
+}
+
+
+</style>
+</head>
+<body>
+
+<h2>get_all_users</h2>
+<!-- <p>Use the CSS border property to add a border to the table.</p> -->
+
+<table style="width:100%">
+<tr>
+    <th>firstname</th>
+    <th>secondname</th>
+    <th>age</th>
+    <th>gender</th>
+    <th>email</th>
+    <th>password</th>
+</tr>
+  <% for(var i = 0; i <= results.length;i++) {
+    if(results[i]){ %>
+  <tr>
+        <td>   <%- results[i].firstname %>    </td>
+        <td>   <%- results[i].secondname %>   </td>
+        <td>   <%- results[i].age %>          </td>
+        <td>   <%- results[i].gender %>          </td>
+        <td>   <%- results[i].email %>        </td>
+        <td>   <%- results[i].password %>     </td>
+  </tr>
+<% }} %>
+
+</table>
+
+</body>
+</html>

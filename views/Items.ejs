@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div style="margin-left:40%">
+<br>
+  <h1>Item</h1>
+<form method="post" action="/Item_create" >
+  <br>
+  <h3>Item_Details</h3>
+
+  <p1>email: <input type="text" name="email" value="<%- result["email"] %>"></p1>
+  <br></br>
+  <p2>Name: <input type="text" name="Name" value="<%- result["Name"] %>"></p2>
+  <br>
+  <p3>Details: <input type="text" name="Details" value="<%- result["Details"] %>"></p3>
+  <br>
+  <p4>Have_a_question <input type="text" name="Have_a_question" value="<%- result["Have_a_question"] %>"></p4>
+  <br>
+
+
+
+<br></br>
+<input type="submit" value="submit">
+<br></br>
+<a href="/read_Items?email=<%- result["email"] %>"><button type="button" >All_Items</button></a>
+
+
+</form>
+</div>
+</body>
+</html>
